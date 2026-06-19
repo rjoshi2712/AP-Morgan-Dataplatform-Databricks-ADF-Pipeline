@@ -1,0 +1,12 @@
+{
+	"name": "ADLS_Databricks_LS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://<YOUR_STORAGE_ACCOUNT_NAME>.dfs.core.windows.net/",
+			"encryptedCredential": "<REDACTED>"
+		}
+	}
+}
