@@ -1,0 +1,21 @@
+{
+	"name": "Databricks_LS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "This is the linked service to create to the databricks account.",
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "<DATABRICKS_WORKSPACE_URL>",
+			"accessToken": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault_Databricks",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "<DATABRICKS_TOKEN_SECRET_NAME>"
+			},
+			"existingClusterId": "<DATABRICKS_CLUSTER_ID>"
+		}
+	}
+}
