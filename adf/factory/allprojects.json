@@ -1,0 +1,15 @@
+{
+	"name": "<ADF_FACTORY_NAME>",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "<AZURE_REGION>",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "<MANAGED_IDENTITY_PRINCIPAL_ID>",
+		"tenantId": "<TENANT_ID>"
+	}
+}
