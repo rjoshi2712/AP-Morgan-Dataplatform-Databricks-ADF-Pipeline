@@ -1,0 +1,11 @@
+{
+	"name": "AzureKeyVault_Databricks",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://<YOUR_KEY_VAULT_NAME>.vault.azure.net/"
+		}
+	}
+}
